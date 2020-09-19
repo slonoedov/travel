@@ -10,17 +10,25 @@
     }
 }());
 
-// const burger = document.querySelector('.burger');
-// console.log(burger);
+
 (function (){
     const burger = document.querySelector('.burger');
     const close = document.querySelector('.header__nav-close');
+    let menuLinks = document.querySelectorAll('.header__link');
+
     burger.addEventListener('click', () => {
         document.querySelector('.header__nav').classList.add('header__nav_active');
-    })
+    });
     close.addEventListener('click', ()=> {
         document.querySelector('.header__nav').classList.remove('header__nav_active');
-    })
+    });
+    if(window.innerWidth <= 767){
+        for(let i = 0; i < menuLinks.length; i++){
+            menuLinks[i].addEventListener('click', ()=>{
+                document.querySelector('.header__nav').classList.remove('header__nav_active');
+            })
+        }
+    }
 }());
 
 
