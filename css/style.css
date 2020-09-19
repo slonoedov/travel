@@ -1222,6 +1222,9 @@ img{
     -ms-grid-column-span: 6;
     grid-column: span 6;
   }
+  .top__card-stats {
+    max-width: 386px;
+}
   .top__card-desc{
     margin-bottom: 15px;
   }
