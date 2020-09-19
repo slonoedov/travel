@@ -726,7 +726,7 @@ img{
   display: grid;
   -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
+  gap: 10px;
 }
 .places__card{
   position: relative;
@@ -1038,7 +1038,7 @@ img{
     grid-column: span 6;
   }
   .tours__tour{
-    grid-column-gap: 35px;
+    column-gap: 35px;
   }
   .tour__info{
     padding-left: 0;
@@ -1050,12 +1050,12 @@ img{
     margin-bottom: 15px;
   }
   .top__cards{
-    grid-column-gap: 25px;
-    grid-row-gap: 55px;
+    column-gap: 25px;
+    row-gap: 55px;
   }
   .top__card{
     -ms-grid-column-span: 3;
-    grid-column: span 3;
+    -column: span 3;
   }
   .top__card-pic{
     margin-bottom: 25px;
